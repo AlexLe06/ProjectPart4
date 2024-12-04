@@ -1,13 +1,14 @@
 package org.example;
 
+import java.sql.SQLOutput;
+
 /**
  * @author Le Nguyen Tan Alex
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        String ko = "baka hello";
-        Book kaka = new Book("hello baka", "alex", 20, "hitler", "f");
+        Book kaka = new Book("hello baka kaba smelyy" , "alex", 20, "hitler", "1234567890-12");
         kaka.toTitleCase();
+        System.out.println(kaka);
     }
 }
