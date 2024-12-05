@@ -81,5 +81,11 @@ public class Book {
                 "Isbn", isbn);
     }
 
-
+    public boolean equals(Book book) {
+        return (this.title.equals(book.title) &&
+                this.author.equals(book.author) &&
+                this.price == book.price &&
+                this.publisher.equals(book.publisher) &&
+                this.isbn.equals(book.isbn));
+    }
 }
