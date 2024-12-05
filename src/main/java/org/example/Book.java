@@ -1,6 +1,5 @@
 package org.example;
 import javax.swing.*;
-import java.util.Random;
 
 //Class Book
 public class Book {
@@ -51,7 +50,7 @@ public class Book {
         }
     }
 
-    public void toTitleCase(){
+    public void toTitleCase(){ //To be changed
         for (int i = 0; i < title.length(); i++){
             if (title.charAt(i) == ' '){
                 title = title.substring(0,1).toUpperCase() + title.substring(1, i + 1) +
@@ -87,5 +86,27 @@ public class Book {
                 this.price == book.price &&
                 this.publisher.equals(book.publisher) &&
                 this.isbn.equals(book.isbn));
+    }
+
+    //Getter methods
+    public String getTitle(){
+        return title;
+    }
+    public String getAuthor(){
+        return author;
+    }
+    public double getPrice(){
+        return price;
+    }
+    public String getPublisher(){
+        return publisher;
+    }
+    public String getIsbn(){
+        return isbn;
+    }
+
+    public Object clone() throws CloneNotSupportedException {
+        Book x = new Book();
+        return x;
     }
 }
