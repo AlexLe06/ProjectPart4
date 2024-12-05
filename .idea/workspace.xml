@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b375f61-0aaf-4ee7-804e-5bb058a5f118" name="Changes" comment="Added equals() constructor">
+    <list default="true" id="1b375f61-0aaf-4ee7-804e-5bb058a5f118" name="Changes" comment="Added getter methods and started clone() method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Library.java" afterDir="false" />
@@ -111,8 +111,35 @@
       <option name="project" value="LOCAL" />
       <updated>1733372790874</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added constructors for Library.java file and equal() in the Library.">
+      <option name="closed" value="true" />
+      <created>1733418707460</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733418707460</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added getter methods and started clone() method.">
+      <option name="closed" value="true" />
+      <created>1733418739734</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733418739734</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Intiial commmit" />
@@ -120,6 +147,8 @@
     <MESSAGE value="Modified isbn to a String data. Added toTitleCase method, but not working." />
     <MESSAGE value="Fixed checkIsbnStatus method and did toTitleCase method, but not perfect. Added toString method and Library.java file." />
     <MESSAGE value="Added equals() constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added equals() constructor" />
+    <MESSAGE value="Added constructors for Library.java file and equal() in the Library." />
+    <MESSAGE value="Added getter methods and started clone() method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added getter methods and started clone() method." />
   </component>
 </project>

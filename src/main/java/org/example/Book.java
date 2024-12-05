@@ -50,21 +50,26 @@ public class Book {
         }
     }
 
-    public void toTitleCase(){ //To be changed
-        for (int i = 0; i < title.length(); i++){
-            if (title.charAt(i) == ' '){
-                title = title.substring(0,1).toUpperCase() + title.substring(1, i + 1) +
-                        title.substring(i + 1,i + 2).toUpperCase() +
+    public void toTitleCase() { //To be simplified
+        for (int i = 0; i < title.length(); i++) {
+            if (title.charAt(i) == ' ') {
+                title = title.substring(0, 1).toUpperCase() + title.substring(1, i + 1) +
+                        title.substring(i + 1, i + 2).toUpperCase() +
                         title.substring(i + 2).toLowerCase();
             }
         }
-        for (int i = 0; i < author.length(); i++){ //Need fixing
+        for (int i = 0; i < author.length(); i++) { //Need fixing
             if (author.charAt(i) == ' ') {
                 author = author.substring(0, 1).toUpperCase() + author.substring(1, i + 1) +
                         author.substring(i + 1, i + 2).toUpperCase() +
                         author.substring(i + 2).toLowerCase();
             }
-
+        }
+        if (!title.contains(" ")) {
+            title = title.substring(0, 1).toUpperCase() + title.substring(1);
+        }
+        if (!author.contains(" ")) {
+            author = author.substring(0, 1).toUpperCase() + author.substring(1);
         }
     }
 
@@ -88,6 +93,28 @@ public class Book {
                 this.isbn.equals(book.isbn));
     }
 
+    public Object clone() throws CloneNotSupportedException {
+        Book x = new Book();
+        return x;
+    }
+
+    //Setter methods
+    public void setTitle(String newTitle){
+        this.title = newTitle;
+    }
+    public void setAuthor(String newAuthor){
+        this.author = newAuthor;
+    }
+    public void setPrice(double newPrice){
+        this.price =  newPrice;
+    }
+    public void setPublisher(String newPublisher){
+        this.publisher = newPublisher;
+    }
+    public void setIsbn(String newIsbn){
+        this.isbn = newIsbn;
+    }
+
     //Getter methods
     public String getTitle(){
         return title;
@@ -103,10 +130,5 @@ public class Book {
     }
     public String getIsbn(){
         return isbn;
-    }
-
-    public Object clone() throws CloneNotSupportedException {
-        Book x = new Book();
-        return x;
     }
 }
