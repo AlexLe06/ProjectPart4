@@ -58,7 +58,7 @@ public class Book {
                         title.substring(i + 2).toLowerCase();
             }
         }
-        for (int i = 0; i < author.length(); i++) { //Need fixing
+        for (int i = 0; i < author.length(); i++) {
             if (author.charAt(i) == ' ') {
                 author = author.substring(0, 1).toUpperCase() + author.substring(1, i + 1) +
                         author.substring(i + 1, i + 2).toUpperCase() +
@@ -78,8 +78,8 @@ public class Book {
                 "%-9s : %s \n" +
                 "%-9s : %s\n" +
                 "%-9s : %.2f\n" +
-                "%-9s : %ss\n" +
-                "%-9s : %s",
+                "%-9s : %s\n" +
+                "%-9s : %s\n",
                 "Title", title, "Author", author,
                 "Price", price, "Publisher", publisher,
                 "Isbn", isbn);
@@ -91,11 +91,6 @@ public class Book {
                 this.price == book.price &&
                 this.publisher.equals(book.publisher) &&
                 this.isbn.equals(book.isbn));
-    }
-
-    public Object clone() throws CloneNotSupportedException {
-        Book x = new Book();
-        return x;
     }
 
     //Setter methods
