@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author Le Nguyen Tan Alex
  */
 public class Library {
-    private ArrayList<Object> books; //Data member
+    private ArrayList<Book> books; //Data member
 
     //Default constructor
     public Library(){
@@ -28,7 +28,7 @@ public class Library {
     }
 
     //Constructor with arraylist
-    public Library(ArrayList<Object> books) {
+    public Library(ArrayList<Book> books) {
         this.books = new ArrayList<>(books);
     }
 
@@ -62,12 +62,12 @@ public class Library {
     }
 
     //setter
-    public void setBooks(ArrayList<Object> books) {
+    public void setBooks(ArrayList<Book> books) {
         this.books = books;
     }
 
     //getter
-    public ArrayList<Object> getBooks() {
+    public ArrayList<Book> getBooks() {
         return books;
     }
 }
