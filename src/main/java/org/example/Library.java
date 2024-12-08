@@ -57,8 +57,11 @@ public class Library {
     }
 
     public String toString() {
-
-        return String.format("%s", books);
+        String result = "";
+        for (int i = 0; i < books.size();i++) {
+            result += String.format("%s\n", books.get(i).getTitle());
+        }
+        return result;
     }
 
     //setter
